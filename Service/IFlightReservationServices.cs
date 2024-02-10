@@ -8,12 +8,12 @@ namespace WS.DataServices.Service;
 public interface IFlightReservationServices
 {
     [OperationContract]
-    public FlighReservation[] GetFlights();
+    public FlightReservation[] GetFlights();
     [OperationContract]
-    public FlighReservation GetFlight(string email, string? username);
+    public FlightReservation GetFlight(int id);
     [OperationContract]
-    public void CreateFlight(FlighReservation user);
+    public void CreateFlight(FlightReservation flightReservation);
     [OperationContract]
-    public void UpdateFlight(FlighReservation user);
+    public void UpdateFlight(FlightReservation flightReservation);
 
 }

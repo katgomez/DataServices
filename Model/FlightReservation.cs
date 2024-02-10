@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WS.DataServices.Model
 {
-    public class FlighReservation
+    public class FlightReservation
     {
         [Key]
         public int Id { get; set; }
