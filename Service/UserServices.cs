@@ -11,11 +11,11 @@ namespace WS.DataServices.Service
         {
             using (DAOFactory factory = new DAOFactory())
             {
-                User checkedUser = factory.usersDAO.All().FirstOrDefault(p => p.Email == user.Email);
+                User checkedUser = factory.UserDao.All().FirstOrDefault(p => p.Email == user.Email);
                 if (checkedUser != null)
                     throw new FaultException(new FaultReason(
                     "User already exists!!!"), new FaultCode("400"), "");
-                factory.usersDAO.Add(user);
+                factory.UserDao.Add(user);
             }
 
         }
@@ -24,7 +24,7 @@ namespace WS.DataServices.Service
         {
             using (DAOFactory factory = new DAOFactory())
             {
-                User[] users = factory.usersDAO.All().ToArray();
+                User[] users = factory.UserDao.All().ToArray();
                 return users.First(p => p.Email == email || p.UserName == username);
             }
         }
@@ -33,7 +33,7 @@ namespace WS.DataServices.Service
         {
             using (DAOFactory factory = new DAOFactory())
             {
-                return factory.usersDAO.All().ToArray();
+                return factory.UserDao.All().ToArray();
             }
 
         }
@@ -42,11 +42,11 @@ namespace WS.DataServices.Service
         {
             using (DAOFactory factory = new DAOFactory())
             {
-                User checkedUser = factory.usersDAO.All().FirstOrDefault(p => p.Email == user.Email);
+                User checkedUser = factory.UserDao.All().FirstOrDefault(p => p.Email == user.Email);
                 if (checkedUser == null)
                     throw new FaultException(new FaultReason(
                     "Product not found!!!"), new FaultCode("404"), "");
-                factory.usersDAO.Update(user);
+                factory.UserDao.Update(user);
             }
         }
     }

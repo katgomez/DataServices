@@ -3,9 +3,9 @@ using WS.Unit06.Example2.Data.DAO;
 
 namespace WS.DataServices.DAO.Impl
 {
-    public class UsersDAO : GenericDAO<User>, IUsersDAO
+    public class UserDao : GenericDAO<User>, IUserDAO
     {
-        public UsersDAO(DataContext context) : base(context)
+        public UserDao(DataContext context) : base(context)
         {
         }
     }

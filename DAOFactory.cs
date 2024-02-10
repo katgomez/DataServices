@@ -17,9 +17,9 @@ namespace WS.Unit06.Example2.Data
             _context = new DataContext();
         }
 
-        public IUsersDAO usersDAO
+        public IUserDAO UserDao
         {
-            get { return new UsersDAO(_context); }
+            get { return new UserDao(_context); }
         }
 
         
