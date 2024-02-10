@@ -11,5 +11,6 @@ namespace WS.DataServices
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<FlighReservation> FlighReservations { get; set; }
     }
 }

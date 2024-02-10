@@ -3,7 +3,7 @@ using WS.DataServices.Model;
 
 namespace WS.DataServices.Service;
 
-public class ReservationService: IReservationServices
+public class ReservationServices: IReservationServices
 {
     public Reservation[] GetReservations()
     {

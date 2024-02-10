@@ -26,7 +26,12 @@ namespace WS.DataServices
         {
             get { return new ReservationDAO(_context); }
         }
-        
+
+        public IFlightReservationDao FlightReservationDao
+        {
+            get { return new FlightReservationDao(_context); }
+        }
+
         public void Dispose() { _context.Dispose(); }
     }
 }
