@@ -6,7 +6,7 @@ using WS.DataServices;
 using WS.DataServices.DAO;
 using WS.DataServices.DAO.Impl;
 
-namespace WS.Unit06.Example2.Data
+namespace WS.DataServices
 {
     public class DAOFactory : IDisposable
     {

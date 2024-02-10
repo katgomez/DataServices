@@ -1,6 +1,5 @@
 ﻿using System.ServiceModel;
 using WS.DataServices.Model;
-using WS.Unit06.Example2.Data;
 
 namespace WS.DataServices.Service;
 
