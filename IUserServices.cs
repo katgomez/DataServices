@@ -10,7 +10,7 @@ namespace WS.DataServices
         [OperationContract]
         public Users[] GetUsers();
         [OperationContract]
-        public long GetUser(String email, String? username);
+        public Users GetUser(String email, String? username);
         [OperationContract]
         public void CreateUser(Users user);
         [OperationContract]
