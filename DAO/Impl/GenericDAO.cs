@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using WS.DataServices;
 
-namespace WS.Unit06.Example2.Data.DAO
+namespace WS.DataServices.DAO.Impl
 {
     public class GenericDAO<T> where T: class
     {
