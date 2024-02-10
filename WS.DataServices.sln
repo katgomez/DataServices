@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.DataServices", "WS.DataServices\WS.DataServices.csproj", "{AB9B1E87-02C4-423D-879F-16A8797C4163}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.DataServices", "WS.DataServices.csproj", "{AB9B1E87-02C4-423D-879F-16A8797C4163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
