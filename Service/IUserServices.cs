@@ -1,20 +1,20 @@
 ﻿using System.ServiceModel;
 using WS.DataServices.Model;
 
-namespace WS.DataServices
+namespace WS.DataServices.Service
 {
     [ServiceContract(Namespace = "http://ws.agencytravel/user/")]
 
     public interface IUserServices
     {
         [OperationContract]
-        public Users[] GetUsers();
+        public User[] GetUsers();
         [OperationContract]
-        public Users GetUser(String email, String? username);
+        public User GetUser(string email, string? username);
         [OperationContract]
-        public void CreateUser(Users user);
+        public void CreateUser(User user);
         [OperationContract]
-        public void UpdateUser(Users user);
+        public void UpdateUser(User user);
 
     }
 }

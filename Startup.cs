@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection.Extensions;
 using SoapCore;
 using System.ServiceModel;
+using WS.DataServices.Service;
 
 namespace WS.DataServices
 {
