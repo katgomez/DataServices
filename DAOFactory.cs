@@ -19,7 +19,7 @@ namespace WS.Unit06.Example2.Data
 
         public IUserDAO UserDao
         {
-            get { return new UserDao(_context); }
+            get { return new UserDAO(_context); }
         }
 
         
