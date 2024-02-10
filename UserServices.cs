@@ -16,6 +16,7 @@ namespace WS.DataServices
                     throw new FaultException(new FaultReason(
                     "User already exists!!!"), new FaultCode("400"), "");
                 factory.usersDAO.Add(user);
+
             }
 
         }
