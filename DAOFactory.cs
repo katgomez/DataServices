@@ -22,6 +22,10 @@ namespace WS.Unit06.Example2.Data
             get { return new UserDAO(_context); }
         }
 
+        public IReservationDAO ReservationDao
+        {
+            get { return new ReservationDAO(_context); }
+        }
         
         public void Dispose() { _context.Dispose(); }
     }

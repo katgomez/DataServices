@@ -10,6 +10,7 @@ namespace WS.DataServices
         public void ConfigureServices(IServiceCollection services)
         {
             services.TryAddSingleton<IUserServices, UserServices>();
+            services.TryAddSingleton<IReservationServices, ReservationService>();
             services.AddMvc(x => x.EnableEndpointRouting = false);
             services.AddSoapCore();
             services.AddDbContext<DataContext>();
@@ -28,6 +29,8 @@ namespace WS.DataServices
             }
             app.UseSoapEndpoint<IUserServices>("/UserServices.svc", new BasicHttpBinding(), SoapSerializer.DataContractSerializer,
             false, null, null, true, true);
+            app.UseSoapEndpoint<IReservationServices>("/ReservationServices.svc", new BasicHttpBinding(), SoapSerializer.DataContractSerializer,
+                false, null, null, true, true);
             app.UseMvc();
         }
     }

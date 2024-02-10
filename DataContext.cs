@@ -10,5 +10,6 @@ namespace WS.DataServices
             optionsBuilder.UseSqlite("Data Source=travelagency.db");
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
     }
 }
