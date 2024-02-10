@@ -20,17 +20,13 @@ namespace WS.DataServices
             {
                 app.UseDeveloperExceptionPage();
             }
-            using (var serviceScope = app.ApplicationServices.
-            GetService<IServiceScopeFactory>().CreateScope())
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = new DataContext();
                 //context.Database.EnsureDeleted(); //Delete ddbb always
                 context.Database.EnsureCreated();
             }
-            app.UseSoapEndpoint<IUserServices>(
-            "/DataServices.svc",
-            new BasicHttpBinding(),
-            SoapSerializer.DataContractSerializer,
+            app.UseSoapEndpoint<IUserServices>("/UserServices.svc", new BasicHttpBinding(), SoapSerializer.DataContractSerializer,
             false, null, null, true, true);
             app.UseMvc();
         }
